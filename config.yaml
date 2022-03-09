@@ -1,9 +1,6 @@
 arch:
-  - aarch64
   - amd64
   - armhf
-  - armv7
-  - i386
 name: "HA-NetClient"
 description: "NetClient for HA"
 version: "0.1.0"
@@ -13,6 +10,7 @@ host_network: true
 ingress: true
 ingress_port: 0
 ingress_stream: true
+image: 
 init: false
 panel_icon: mdi:vpn
 privileged:
