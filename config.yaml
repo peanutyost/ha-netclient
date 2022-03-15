@@ -3,18 +3,24 @@ arch:
   - armhf
 name: "HA-NetClient"
 description: "NetClient for HA"
-version: "0.1.0"
+version: "0.11.1"
 slug: "Netclient For HA"
 hassio_api: true
 host_network: true
 ingress: true
 ingress_port: 0
 ingress_stream: true
-image: 
+legacy: true
+image: gravitl/netclient
 init: false
 panel_icon: mdi:vpn
+map:
+- addons:rw
+options:
+  token: []
 privileged:
 - NET_ADMIN
 schema:
   tags:
   - match(^tag:[a-zA-Z0-9]-?[a-zA-Z0-9]+$)?
+  token: str
