@@ -3,7 +3,7 @@ arch:
   - armhf
 name: "HA-NetClient"
 description: "NetClient for HA"
-version: "latest"
+version: "v0.12.1"
 slug: "Netclient For HA"
 hassio_api: true
 host_network: true
@@ -11,7 +11,6 @@ ingress: true
 ingress_port: 0
 ingress_stream: true
 legacy: true
-image: gravitl/netclient
 init: false
 panel_icon: mdi:vpn
 map:
