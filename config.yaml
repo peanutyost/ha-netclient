@@ -1,7 +1,8 @@
 arch:
   - amd64
-  - armhf
+  - arm64
 name: "HA-NetClient"
+image: "gravitl/netclient"
 description: "NetClient for HA"
 version: "v0.12.1"
 slug: "Netclient For HA"
